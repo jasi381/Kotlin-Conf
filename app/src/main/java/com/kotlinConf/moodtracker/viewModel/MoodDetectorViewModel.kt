@@ -47,7 +47,7 @@ class MoodDetectorViewModel @Inject constructor(
                 val response = generativeModel.generateContent(
                     content {
                         image(image ?: return@content)
-                        text("Analyze the mood conveyed by the person in the attached image.Also give some tips to improve the mood.")
+                        text("Analyze the mood conveyed by the person in the attached image.")
                     }
                 )
                 // Set response state to success if text content is available
